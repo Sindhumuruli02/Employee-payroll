@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Change Button Color</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<input type="text" id="colorInput" placeholder="Enter a color">
+<button id="colorButton">Change Color</button>
+ <script>
+ 
+        $(document).ready(function() {
+ 
+            $('#colorButton').click(function() {
+ 
+                var color = $('#colorInput').val();
+ 
+                $(this).css('background-color', color);
+ 
+            });
+ 
+        });
+        
+</script>
+ 
+</body>
+ 
+</html>
+
+
+
+<div style="gap: 20px;">
+    <button class="custom" id="custom-id" type="button" style="margin-right: 8px;">
+            Submit
+    </button>
+    <button class="btn-none custom" type="button">
+            Reset
+    </button>
+</div>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Decrease Number</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <input type="number" id="numberInput" value="10">
+    <button id="startButton">Start Decreasing</button>
+    <p>Current Value: <span id="displayValue">10</span></p>
+ 
+    <script>
+        $(document).ready(function(){
+            var intervalId;
+ 
+            $('#startButton').click(function(){
+                clearInterval(intervalId); // Clear any existing interval to prevent multiple intervals
+                var currentValue = parseInt($('#numberInput').val(), 10);
+                $('#displayValue').text(currentValue);
+ 
+                intervalId = setInterval(function(){
+                    if (currentValue > 0) {
+                        currentValue--;
+                        $('#displayValue').text(currentValue);
+                    } else {
+                        clearInterval(intervalId);
+                    }
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>

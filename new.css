@@ -1,0 +1,86 @@
+/* styles.css */
+
+/* Flexbox magic to align elements horizontally */
+.magical-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0; /* Set your desired background color */
+    padding: 10px; /* Adjust as needed */
+}
+
+/* Style for the logo */
+.logo img {
+    max-width: 100px; /* Adjust logo size */
+}
+
+/* Style for navigation links */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px; /* Adjust spacing between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333; /* Set link color */
+}
+
+/* Style for search input and button */
+.search-form {
+    display: flex;
+}
+
+.search-form input {
+    padding: 5px;
+    border: 1px solid #ccc; /* Set input border color */
+}
+
+.search-form button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px; /* Adjust button padding */
+}
+
+/* Style for "+ Add New" button */
+.add-user-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px; /* Adjust button padding */
+}
+
+/* Additional styles as needed */
+/* styles.css */
+
+/* Style for the entire table */
+.magical-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style for table headers (th) */
+.magical-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 10px;
+}
+
+/* Style for alternating row colors */
+.magical-table tr:nth-child(even) {
+    background-color: #e7f4e4;
+}
+
+/* Style for table cells (td) */
+.magical-table td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Optional border for cells */
+}
+
+/* Additional styles as needed */
